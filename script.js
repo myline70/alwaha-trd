@@ -11,4 +11,18 @@ function applyLang(){
   document.body.className = lang === "ar" ? "rtl" : "";
 }
 
+function toggleMenu(){
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e){
+  const nav = document.querySelector('nav');
+  const navLinks = document.querySelector('.nav-links');
+  if(navLinks && !nav.contains(e.target)){
+    navLinks.classList.remove('active');
+  }
+});
+
 window.onload = applyLang;

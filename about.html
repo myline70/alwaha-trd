@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — ALWAHA TRD</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 
 <body>
@@ -12,33 +12,44 @@
 <header>
 <div class="logo-row">
   <a href="index.html">
-    <img src="assets/alwaha_logo.png" alt="ALWAHA TRD" style="height:60px;">
+    <img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/alwaha_logo.png" alt="ALWAHA TRD">
   </a>
   <strong>ALWAHA TRD</strong>
 </div>
+
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="products.html">Products</a>
-<a href="contact.html">Contact</a>
+<a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+<a href="about.html" class="active" data-en="About Us" data-ar="من نحن">About Us</a>
+<a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
+<a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+
+<div class="lang">
+<button class="lang-btn" onclick="setLang('ar')">AR</button>
+<button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
 </nav>
 </header>
 
 <div class="container">
 
-<h2 data-en="About Us" data-ar="من نحن"></h2>
+<h2 data-en="About Us" data-ar="من نحن">About Us</h2>
 
 <p data-en="Established in 2001 in Oman, ALWAHA TRD is active in trading, supply, contracting support, and government & private sector projects."
 data-ar="تأسست المؤسسة عام 2001 في سلطنة عمان وتعمل في التجارة والتوريدات ودعم المشاريع للقطاعين الحكومي والخاص.">
+Established in 2001 in Oman, ALWAHA TRD is active in trading, supply, contracting support, and government & private sector projects.
 </p>
 
 <p data-en="We focus on quality, reliability, and long-term partnerships."
 data-ar="نركز على الجودة والموثوقية وبناء شراكات طويلة الأمد.">
+We focus on quality, reliability, and long-term partnerships.
 </p>
+
+<img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/logistics.jpg" alt="Logistics" style="width:100%; border-radius:10px; margin-top:20px;">
 
 </div>
 
 <footer>ALWAHA TRD</footer>
 
+<script src="script.js"></script>
 </body>
 </html>

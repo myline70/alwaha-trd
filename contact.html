@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — ALWAHA TRD</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 
 <body>
@@ -12,33 +12,45 @@
 <header>
 <div class="logo-row">
   <a href="index.html">
-    <img src="assets/alwaha_logo.png" alt="ALWAHA TRD" style="height:60px;">
+    <img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/alwaha_logo.png" alt="ALWAHA TRD">
   </a>
   <strong>ALWAHA TRD</strong>
 </div>
+
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="products.html">Products</a>
-<a href="contact.html">Contact</a>
+<a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+<a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a>
+<a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
+<a href="contact.html" class="active" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+
+<div class="lang">
+<button class="lang-btn" onclick="setLang('ar')">AR</button>
+<button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
 </nav>
 </header>
 
 <div class="container">
 
-<h2 data-en="Contact Us" data-ar="تواصل معنا"></h2>
+<h2 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h2>
 
-<p>📞 00968 99751174</p>
-<p>📞 00968 77231818</p>
-<p>✉️ alwahatrd@gmail.com</p>
+<p data-en="Phone:" data-ar="الهاتف:">Phone:</p>
+<p style="font-size:1.2rem; margin:5px 0;">00968 99751174</p>
+<p style="font-size:1.2rem; margin:5px 0;">00968 77231818</p>
 
-<a href="https://wa.me/96899751174">
-<button>WhatsApp</button>
+<p data-en="Email:" data-ar="البريد الإلكتروني:" style="margin-top:20px;">Email:</p>
+<p style="font-size:1.2rem;">alwahatrd@gmail.com</p>
+
+<a href="https://wa.me/96899751174" style="display:inline-block; margin-top:25px;">
+<button style="background:#25D366; color:white; font-size:1.1rem; padding:12px 30px;">
+WhatsApp
+</button>
 </a>
 
 </div>
 
 <footer>ALWAHA TRD</footer>
 
+<script src="script.js"></script>
 </body>
 </html>

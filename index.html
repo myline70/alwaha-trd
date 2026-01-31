@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ALWAHA TRD</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 
 <body>
@@ -12,23 +12,25 @@
 <header>
 <div class="logo-row">
   <a href="index.html">
-    <img src="assets/alwaha_logo.png" alt="ALWAHA TRD" style="height:60px;">
+    <img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/alwaha_logo.png" alt="ALWAHA TRD">
   </a>
   <strong>ALWAHA TRD</strong>
 </div>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="products.html">Products</a>
-<a href="contact.html">Contact</a>
+<a href="index.html" class="active" data-en="Home" data-ar="الرئيسية">Home</a>
+<a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a>
+<a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
+<a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a>
 
 <div class="lang">
-<button onclick="setLang('en')">EN</button>
-<button onclick="setLang('ar')">AR</button>
+<button class="lang-btn" onclick="setLang('ar')">AR</button>
+<button class="lang-btn" onclick="setLang('en')">EN</button>
 </div>
 </nav>
 </header>
+
+<img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/Sulfur-crystals.jpg" alt="Sulfur" class="hero">
 
 <div class="container">
 <h2 data-en="Import & Export Trading" data-ar="مؤسسة استيراد وتصدير">
@@ -37,26 +39,28 @@ Import & Export Trading
 
 <p data-en="We specialize in import, export, and supply of industrial and commercial products with reliable sourcing and global shipping."
 data-ar="نحن متخصصون في الاستيراد والتصدير والتوريدات للمنتجات الصناعية والتجارية مع مصادر موثوقة وشحن دولي.">
+We specialize in import, export, and supply of industrial and commercial products with reliable sourcing and global shipping.
 </p>
 
 <div class="grid">
 
 <div class="card">
-<h3>Sulphur</h3>
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Sulfur-sample.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/sulphur1.jpg" alt="Sulphur">
+<h3 data-en="Sulphur" data-ar="الكبريت">Sulphur</h3>
 </div>
 
 <div class="card">
-<h3 data-en="General Supplies" data-ar="توريدات عامة"></h3>
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Warehouse.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/Industrial_materials.png" alt="General Supplies">
+<h3 data-en="General Supplies" data-ar="توريدات عامة">General Supplies</h3>
 </div>
 
 </div>
 </div>
 
 <footer>
-ALWAHA TRD ©
+ALWAHA TRD
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

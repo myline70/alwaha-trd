@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Products — ALWAHA TRD</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 
 <body>
@@ -12,34 +12,46 @@
 <header>
 <div class="logo-row">
   <a href="index.html">
-    <img src="assets/alwaha_logo.png" alt="ALWAHA TRD" style="height:60px;">
+    <img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/alwaha_logo.png" alt="ALWAHA TRD">
   </a>
   <strong>ALWAHA TRD</strong>
 </div>
+
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="products.html">Products</a>
-<a href="contact.html">Contact</a>
+<a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+<a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a>
+<a href="products.html" class="active" data-en="Products" data-ar="المنتجات">Products</a>
+<a href="contact.html" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+
+<div class="lang">
+<button class="lang-btn" onclick="setLang('ar')">AR</button>
+<button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
 </nav>
 </header>
 
 <div class="container">
 
-<h2 data-en="Export Products" data-ar="المنتجات القابلة للتصدير"></h2>
+<h2 data-en="Export Products" data-ar="المنتجات القابلة للتصدير">Export Products</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Sulphur Lump / Granular</h3>
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Sulfur-crystals.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/sulphur01.jpg" alt="Sulphur Lump">
+<h3 data-en="Sulphur Lump / Granular" data-ar="كبريت قطع / حبيبات">Sulphur Lump / Granular</h3>
 <p data-en="Industrial & agricultural grade sulphur available for export."
-data-ar="كبريت صناعي وزراعي متوفر للتصدير."></p>
+data-ar="كبريت صناعي وزراعي متوفر للتصدير.">
+Industrial & agricultural grade sulphur available for export.
+</p>
 </div>
 
 <div class="card">
-<h3 data-en="Industrial Materials" data-ar="مواد صناعية"></h3>
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Industrial_materials.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/myline70/alwaha-trd/main/assets/Industrial_materials.png" alt="Industrial Materials">
+<h3 data-en="Industrial Materials" data-ar="مواد صناعية">Industrial Materials</h3>
+<p data-en="Various industrial materials and supplies."
+data-ar="مواد ومستلزمات صناعية متنوعة.">
+Various industrial materials and supplies.
+</p>
 </div>
 
 </div>
@@ -48,5 +60,6 @@ data-ar="كبريت صناعي وزراعي متوفر للتصدير."></p>
 
 <footer>ALWAHA TRD</footer>
 
+<script src="script.js"></script>
 </body>
 </html>

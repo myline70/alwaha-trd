@@ -6,7 +6,7 @@ body{
 
 header{
   background:white;
-  padding:15px 40px;
+  padding:15px 30px;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -14,6 +14,7 @@ header{
   position:sticky;
   top:0;
   z-index:100;
+  flex-wrap:nowrap;
 }
 
 .logo-row{
@@ -159,22 +160,49 @@ footer{
   text-align:right;
 }
 
-/* Mobile Responsive */
-@media(max-width:768px){
+/* Tablet Responsive */
+@media(max-width:900px){
   header{
-    padding:12px 15px;
+    padding:12px 20px;
+  }
+
+  .nav-links{
+    gap:4px;
+  }
+
+  nav a{
+    padding:8px 10px;
+    font-size:0.85rem;
+  }
+
+  .lang-btn{
+    padding:6px 12px;
+    font-size:0.8rem;
+  }
+}
+
+/* Mobile Responsive */
+@media(max-width:600px){
+  header{
+    padding:10px 15px;
+  }
+
+  .logo-row{
+    gap:8px;
   }
 
   .logo-row img{
-    height:40px;
+    height:35px;
   }
 
   .logo-row strong{
-    font-size:1rem;
+    font-size:0.9rem;
   }
 
   .menu-toggle{
     display:block;
+    padding:6px 10px;
+    font-size:1.1rem;
   }
 
   nav{
@@ -184,14 +212,14 @@ footer{
   .nav-links{
     display:none;
     position:absolute;
-    top:100%;
+    top:calc(100% + 10px);
     right:0;
     background:white;
     flex-direction:column;
-    min-width:200px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.15);
-    border-radius:8px;
-    padding:10px 0;
+    min-width:180px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.2);
+    border-radius:10px;
+    padding:15px 0;
     z-index:1000;
   }
 
@@ -202,24 +230,31 @@ footer{
   .nav-links a{
     width:100%;
     text-align:center;
-    padding:12px 20px;
+    padding:14px 20px;
     border-radius:0;
+    font-size:1rem;
   }
 
-  .nav-links a:hover{
-    background:#f0f0f0;
-    color:#0b2345;
+  .nav-links a:hover,
+  .nav-links a.active{
+    background:#0b2345;
+    color:white;
   }
 
   .lang{
     margin:10px 0 5px 0;
     justify-content:center;
-    padding-top:10px;
+    padding-top:12px;
     border-top:1px solid #eee;
   }
 
+  .lang-btn{
+    padding:10px 25px;
+    font-size:0.95rem;
+  }
+
   .hero{
-    height:200px;
+    height:180px;
   }
 
   .container{
@@ -229,7 +264,12 @@ footer{
   }
 
   h2{
-    font-size:1.3rem;
+    font-size:1.2rem;
+  }
+
+  p{
+    font-size:0.95rem;
+    line-height:1.6;
   }
 
   .grid{
@@ -245,14 +285,18 @@ footer{
     height:180px;
   }
 
+  .card h3{
+    font-size:1rem;
+  }
+
   footer{
     padding:20px 15px;
     margin-top:20px;
-    font-size:0.9rem;
+    font-size:0.85rem;
   }
 }
 
-/* RTL Mobile Fix */
+/* RTL Fix */
 .rtl nav{
   flex-direction:row-reverse;
 }
@@ -262,8 +306,13 @@ footer{
   margin-right:15px;
 }
 
-@media(max-width:768px){
+@media(max-width:600px){
   .rtl .lang{
     margin-right:0;
+  }
+
+  .rtl .nav-links{
+    right:auto;
+    left:0;
   }
 }
